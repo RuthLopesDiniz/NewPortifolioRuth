@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruth_Diniz</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+    <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="./js/script.js" defer></script>
+    <link rel="icon" type="image/png" href="./assets/escritorio.png">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Portifolio.</a>
+
+        <div class="links">
+            <div>
+                <label for="chk" class="label">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home" style="--i:1" ; class="active">Home</a>
+            <a href="#about" style="--i:2" ;>Sobre</a>
+            <a href="#skils" style="--i:3" ;>Experiência</a>
+            <a href="#project" style="--i:4" ;>Projetos</a>
+            <a href="#contact" style="--i:5" ;>Contatos</a>
+        </nav> 
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    
+    <section class="home">
+        
+        <div class="home-content">
+            <h3>Olá, meu nome é</h3>
+            <h1>Ruth Diniz</h1>
+            <h3>Sou <span class="multiple-text"></span></h3>
+            <p>Atuo na programação de projetos, fazendo uso das tecnologias HTML, CSS, JavaScript e framework
+                Angular. Além de versionamento de código usando Git e GitHub, clean code e figma, sendo responsável
+                pela aplicação e processo de adaptação em diversas telas.
+            </p>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/ruth.lopesdiniz" target="_blank" style="--i:6"><i class='bx bxl-facebook'></i></a>
+                <a href="https://instagram.com/ruthdiniz88/" target="_blank" style="--i:7"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/ruth-lopes-diniz/" target="_blank" style="--i:8"><i
+                        class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/RuthLopesDiniz/" target="_blank" style="--i:9"><i
+                        class='bx bxl-github'></i></a>
+            </div>
+
+            <a href="./assets/Curriculo Ruth (4).pdf" class="btn" target="_blank"><i
+                    class="fa fa-cloud-download mao"></i>
+                Download CV</a>
+
+        </div>
+
+        <div class="home-img">
+            <img src="./assets/Home-foto-Ruth.png" alt="">
+        </div>
+    </section>
+
+    
+    <section id="about">
+        <div class="container-title">
+            <h2 class="title-about">SOBRE MIM</h2>
+        </div>
+        <div class="container-about">
+            <div class="foto">
+                <img class="my-foto" src="./assets/escritorio.png" alt="foto-mika">
+            </div>
+            <div class="container-about">
+                <h2 class="bem-vindos">Sejam bem-vindos ao meu portfólio!</h2>
+                <p class="text-about">Olá, eu me chamo Ruth e tenho 34 anos. Apaixonada pela programação e
+                    dedicada a fazer aplicações que facilitam a vida do usuário. </p>
+                <p class="text-about">Sou formada em Analise e desenvolvimento de sistemas, no momento tenho
+                    conhecimento em HTML, CSS, JAVASCRIPT,
+                    NODE.js e ANGULAR além de realizar projetos autonomos e trabalhar com
+                    responsividade.</p>
+                <p class="text-about"> Estou animada para aprender cada vez mais sobre programação e colocar em
+                    prática tudo o que
+                    aprendo. Espero poder colaborar em seus projetos futuros.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="btn-top" style="display: flex;">
+        <img class="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAhFJREFUSEvt1kvoTVEUx/HP3zOlRClJGFAmJmZIFAMRInkneWTCQDGjyJCBMCHkNUAeITKgPEImJiYGSgykFCklby3tW6fd/557zrnpP2DP9tpr/75nrb322qdHH42ePuL6D66T+cHJ+UudTS3fpqkehKtJZBG+1oU3AQ/AdcxNsFtYgO914HXBAb2EhRnkGpbgR1V4HXB/XO4F2mJdxIqq8KrgfjiPpR0iCvhy/OwUeRVwQE9hTSZ2M83nZfbTWIdfZfBO4Fg/g9WZyA0sTrYrmJ+tn8DGMngn8HGsz0QDtKxQxVFwFwof0nIP+IZ2UZeB92JntvFsSmNU77i09gpReJHiVZn/HuzuDV4Gnoi7GJ02Fs9uDB4k+1S85U/fP4m1yf4as/CyLjj8xyb4bWxOZzYKjzE+Cb7AjAL8SAIG9E2TVLf2jMD7NBmJR5iQCQZ8Gt4l+3B86Kaqi3sDeh+T2gg+x/TCR5Ze5U5VXYz6YQm05fcspbmVobbwKuBIdRTZ5ExlV5pH9RdHwOPMP3aT6mGpenPoDuxPwtuxL4M8xUx8alJcQ3EPU7LNW3E4s23Bocz2BHPawctSfRABKY5NONYmilg7mq0dwLbe/MvAQ9KDPzvd32j80UTKRjSPaCKheyf9IHyuCw7/gTiXnsTox1XGytS342H51uSMq0Aa+1S5To3Fu7lOfwUaov9exL8BKk9aHwGs2TEAAAAASUVORK5CYII="/>
+    </div>
+
+</body>
+
+</html>
