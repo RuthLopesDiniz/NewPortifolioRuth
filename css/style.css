@@ -56,6 +56,9 @@ header{
 .burger {
     display: none;
 }
+.navbar-reponsive{
+    display: none;
+}
 
 .burger div {
     width: 25px;
@@ -70,14 +73,12 @@ header{
 #about,
 #project,
 #contact {
-    padding: 50px;
+    width: 20%;
 }
-
 
 .home{
     position: relative;
-    width: 8
-    0%;
+    width: 80%;
     height: 100vh;
     display: flex;
     justify-content: space-between;
@@ -253,7 +254,39 @@ header{
 
 /*ABOUT*/
 #about{
-    background: rgba(96, 55, 122, 0.733);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(96, 55, 122, 0.733);  
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-about{
+    margin-top: 2%;
+    display: flex;   
+    align-items: center; 
+}
+
+.container-title{
+    margin-top: 2%;
+    text-align: center; 
+}
+.title-about{
+    border-bottom: 1px solid white;
+}
+.text-about{
+    text-align: justify;
+    margin-left: 2%;
+    max-width: 500px;
+}
+.bem-vindos{
+    display: block;
+    margin-top: 2%;
+}
+.my-foto{
+    display: block;
+    max-width: 500px;
 }
 
 /*btn arrow*/
@@ -261,30 +294,33 @@ header{
     background-color: pink;
     bottom: 30px;
     right: 30px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     border-style: groove;
-    flex-direction: row;
     cursor: pointer;
     position: fixed;
-    
-    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out
-    infinite;
-    box-shadow: 0 0 10px rgba(178, 154, 175, 0.5);
+    animation: zoomIn 5s ease forwards, floatImage 6s ease-in-out infinite;
+}
+#btn-top:hover{
+    box-shadow: 0 0 30px white;
 }
 
-
 @media screen and (max-width:700px) {
+    .header{
+        position: fixed;
+        margin-top: 0%;
+        background-color: purple;
+        display: flex;
+        /*height: 10vh;*/
+    }
+    .navbar{display: none;}
     .burger {
         display: block;
-      
     }
-
     .burger.active .line2 {
         opacity: 0
     }
-
     .burger.active .line1 {
         transform: translateY(8px) rotate(45deg);
     }
@@ -292,24 +328,53 @@ header{
     .burger.active .line3 {
         transform: translateY(-8px) rotate(-45deg);
     }
+    .navbar-reponsive{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+    }
+    .navbar-reponsive a{
+        border-bottom: 4px solid white;
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+        margin-top: 15px;
+        margin: 45px;
+    }
 
     .links {
         position: fixed;
-        padding: 5px 15px;
-        top: 69px;
+        top: 60px;
         right: -100%;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         width: 70%;
-        height: 55vh;
-        background: pink;
+        height: 80vh;
+        border-radius: 12px;
+        background:purple;
         transition: all .5s;
-        
     }
 
     .links.active {
         right: 0;
     }
 
+    .home{
+        position: relative;
+        width: 80%;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    #about, .container-about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+    }
+    .my-foto{
+        display: block;
+        max-width: 300px;
+    }
 }
