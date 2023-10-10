@@ -1,0 +1,45 @@
+[
+    {
+      "name": "Weather-app",
+      "image": "./assets/weatherAPP.png",
+      "tags": ["Angular", "HTML5", "CSS3", "JAVASCRIPT"],
+      "link": "https://github.com/RuthLopesDiniz/Weather-app"
+    },
+      {
+      "name": "Conversor de moedas",
+      "image": "./assets/convertMoney.PNG",
+      "tags": ["HTML5", "CSS3", "JAVASCRIPT"],
+      "link": "https://github.com/RuthLopesDiniz/Conversor-de-moedas"
+    },
+      {
+      "name": "JokenPô",
+      "image": "./assets/jokenPo.png",
+      "tags": ["HTML5", "CSS3", "JAVASCRIPT"],
+      "link": "https://github.com/RuthLopesDiniz/JokenPo"
+    },
+     {
+        "name": "Sorteador",
+        "image": "./assets/DevSorteio.PNG",
+        "tags": ["HTML5", "CSS3", "JAVASCRIPT"],
+        "link": "https://github.com/RuthLopesDiniz/DevSorteio"
+      },
+        {
+        "name": "ToDoList",
+        "image": "./assets/ToDoList.png",
+        "tags": ["HTML5", "CSS3", "JAVASCRIPT"],
+        "link": "https://github.com/RuthLopesDiniz/DevSorteio"
+      },
+        {
+        "name": "Clone landing page iPhone",
+        "image": "./assets/iphone.PNG",
+        "tags": ["HTML5", "CSS3", "JAVASCRIPT"],
+        "link": "https://github.com/RuthLopesDiniz/IPhone"
+      },
+      {
+        "name": "Clone landing page Starbucks",
+        "image": "./assets/STARBUCKS.png",
+        "tags": ["HTML5", "CSS3", "JAVASCRIPT"],
+        "link": "https://mellow-marzipan-4f33df.netlify.app/"
+      }
+      
+  ]

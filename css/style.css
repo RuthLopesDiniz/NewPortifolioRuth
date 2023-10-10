@@ -50,7 +50,7 @@ header{
 
 .navbar a:hover,
 .navbar a.active {
-    color:#b83af2e9;
+    color:rgb(202, 11, 202);
 }
 
 .burger {
@@ -180,6 +180,10 @@ header{
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
 }
+.btn:hover{
+    background: linear-gradient(90deg, rgba(204, 10, 202, 1) 10%, rgba(107, 33, 151, 1) 100%);
+    transition: all 0.4s;
+}
 
 @keyframes slideRight{
     0%{
@@ -257,7 +261,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(96, 55, 122, 0.733);  
+    background: linear-gradient(90deg, rgba(204, 10, 202, 1) 30%, rgba(107, 33, 151, 1) 100%);  
     width: 100vw;
     height: 100vh;
 }
@@ -278,7 +282,8 @@ header{
 .text-about{
     text-align: justify;
     margin-left: 2%;
-    max-width: 500px;
+    max-width: 600px;
+    margin-top: 8px;
 }
 .bem-vindos{
     display: block;
@@ -306,14 +311,90 @@ header{
     box-shadow: 0 0 30px white;
 }
 
-@media screen and (max-width:700px) {
+/*ESTILIZAR SESSÃO DE PROJETOS*/
+
+#card-projects{
+    padding: 32px 40px;
+    grid-column: 1 / 3;
+    text-align: center;
+}
+.title-projects{
+    border-bottom: 1px solid white;    
+}
+
+#project-contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    margin-top: 20px;
+    border: none;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+    background: rgba(133, 0, 181, .1);
+    width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+
+    border-radius: 6px;
+    padding-bottom: 12px;
+    border: 1px solid;
+}
+.project picture{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+.project picture img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: all 0.4s;
+}
+.project:hover picture img{
+    transform: scale(1.1);/*aumenta a imagem em 10%*/
+}
+.project strong{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(222, 222, 234);
+    text-align: center;
+    padding: 0 18px;
+    text-align: center;
+
+    transition: all 0.4s;
+}
+.project:hover strong{
+    color: rgb(0, 255, 255);
+}
+.project div{
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap; /*garante que os elementos pulem para a segunda linha*/
+    border: none;
+    padding: 0 8px;
+}
+.project div span{
+    font-size: 12px;
+    font-weight: 300;
+    background: rgb(222, 222, 234);
+    border-radius: 2px;
+}
+
+
+/*responsividade*/
+@media screen and (max-width:768px) {
+    
     .header{
         position: fixed;
         margin-top: 0%;
         background-color: purple;
         display: flex;
-        /*height: 10vh;*/
     }
+
     .navbar{display: none;}
     .burger {
         display: block;
@@ -349,7 +430,7 @@ header{
         right: -100%;
         flex-direction: column;
         width: 70%;
-        height: 80vh;
+        height: 86vh;
         border-radius: 12px;
         background:purple;
         transition: all .5s;
@@ -361,9 +442,32 @@ header{
 
     .home{
         position: relative;
+        margin-top: 10%;
         width: 80%;
         height: 100vh;
         flex-direction: column;
+    }
+
+    .home-content h1{
+        font-size: 36px;
+        font-weight: 500;
+        margin: -3px 0;
+        opacity: 0;
+        animation: slideRight 1s ease forwards;
+        animation-delay: 1s;
+    }
+
+    .home-content h3{
+        font-size: 18px;
+        font-weight: 500;
+        opacity: 0;
+        animation: slideBottom 1s ease forwards;
+        animation-delay: .7s;
+    }
+    
+    .home-content h3:nth-of-type(2){
+        animation: slideTop 1s ease forwards;
+        animation-delay: .7s;
     }
 
     #about, .container-about{
@@ -375,6 +479,37 @@ header{
     }
     .my-foto{
         display: block;
-        max-width: 300px;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .home-img img{
+        max-width: 250px;
+        animation: zoomIn 1s ease forwards, 4s ease-in-out
+        infinite;
+        animation-delay: 2s, 3s;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+
+    #project-contents{ 
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .text-about{
+        margin: 0 auto;
+        margin-top: 8px;
+        font-size: 14px;
     }
 }
+
+@media(max-width: 1200px){
+
+
+}
+
+@media(max-width: 1080px){
+
+}
+
