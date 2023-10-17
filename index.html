@@ -12,27 +12,27 @@
     <link rel="icon" type="image/png" href="./assets/escritorio.png">
 </head>
 
-<body>
+<body id="body">
 
     <header class="header">
-        <a href="#header" class="logo">Portfolio.</a>
+        <a href="#" class="logo">Portfolio.</a>
 
         <div class="links">
             <nav class="navbar-reponsive">
-                <a href="#header" style="--i:1" ; class="active">Home</a>
+                <a href="#home" style="--i:1" ; class="active">Home</a>
                 <a href="#about" style="--i:2" ;>Sobre</a>
-                <a href="#" style="--i:3" ;>Habilidades</a>
+                <!-- <a href="#" style="--i:3" ;>Habilidades</a> -->
                 <a href="#card-projects" style="--i:4" ;>Projetos</a>
-                <a href="#" style="--i:5" ;>Contato</a>
+                <a href="#footer" style="--i:5" ;>Contato</a>
             </nav>
         </div>
 
         <nav class="navbar">
-            <a href="#header" style="--i:1" ; class="active">Home</a>
+            <a href="#home" style="--i:1" ; class="active">Home</a>
             <a href="#about" style="--i:2" ;>Sobre</a>
-            <a href="#" style="--i:3" ;>Habilidades</a>
+            
             <a href="#card-projects" style="--i:4" ;>Projetos</a>
-            <a href="#" style="--i:5" ;>Contato</a>
+            <a href="#footer" style="--i:5" ;>Contato</a>
         </nav>
 
         <div class="burger">
@@ -42,7 +42,7 @@
         </div>
     </header>
 
-    <section class="home">
+    <section id="home">
         <div class="home-content">
             <h3>Olá, meu nome é</h3>
             <h1>Ruth Diniz</h1>
@@ -66,7 +66,6 @@
             <a href="./assets/Curriculo Ruth (4).pdf" class="btn" target="_blank"><i
                     class="fa fa-cloud-download mao"></i>
                 Meu currículo</a>
-
         </div>
 
         <div class="home-img">
@@ -111,5 +110,34 @@
     </div>
     <script src="/scripts/index.js"></script>
 </body>
+
+<footer id="footer">
+    <div class="footer-container">
+
+        <!-- <div class="form">
+            <form class="contatos-form" action="https://formsubmit.co/rodolphoreis@live.com" method="POST">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>
+                <label for="message">Mensagem</label>
+                <input type="text" name="message" id="message" required>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500//thanks.html">
+                <button type="submit">Enviar</button>
+            </form>
+        </div> -->
+        <div class="footer-content">
+            <h2 class="info-contact">Email:</h2>
+            <img src="./assets/Gmail.png" alt="Icon do gmail">
+            <p>ruthma1964@gmail.com</p>
+        </div>
+        <div class="footer-content">
+            <h2 class="links-uteis">Links Úteis</h2>
+            <ul>
+                <li><a class="link-rod" href="#home">Página Inicial</a></li>
+                <li><a class="link-rod" href="#about">Sobre</a></li>
+                <li><a class="link-rod" href="#card-projects">Projetos</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
 </html>
