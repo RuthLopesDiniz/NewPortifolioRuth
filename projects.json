@@ -11,6 +11,12 @@
       "tags": ["HTML5", "CSS3", "JAVASCRIPT"],
       "link": "https://github.com/RuthLopesDiniz/Conversor-de-moedas"
     },
+    {
+      "name": "Super Mario Bros",
+      "image": "./assets/desktopMario.PNG",
+      "tags": ["HTML5", "CSS3", "JAVASCRIPT"],
+      "link": "https://super-mario-form.netlify.app/"
+    },
       {
       "name": "JokenPô",
       "image": "./assets/jokenPo.png",
